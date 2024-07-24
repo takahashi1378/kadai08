@@ -14,10 +14,10 @@ function h($str)
 function db_conn()
 {
     try {
-        $db_name = 'gs_db_class3'; //データベース名
-        $db_id   = 'root'; //アカウント名
-        $db_pw   = ''; //パスワード：MAMPは'root'
-        $db_host = 'localhost'; //DBホスト
+        $db_name = "lobo03_kadai08" ; //データベース名
+        $db_id   = "lobo03"; //アカウント名
+        $db_pw   = "lobo0303"; //パスワード：MAMPは'root'
+        $db_host = "mysql635.db.sakura.ne.jp"; //DBホスト
         $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
         return $pdo;
     } catch (PDOException $e) {
